@@ -8,8 +8,9 @@ function generateMarkdown(answers) {
       answers.License
     )}-blue.svg) `;
   }
+
   return `
-  # ${answers.Title}
+  ${licenseBadge}# ${answers.Title}
   
   ## Description
   ${answers.Description}

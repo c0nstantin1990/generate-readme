@@ -1,8 +1,8 @@
 
-  # generate-readme
+  ![License](https://img.shields.io/badge/License--blue.svg) # generate-readme
   
   ## Description
-  app to generate template for readme
+  app to easily generate readme file
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,7 +16,7 @@
   node index.js in console
   
   ## Usage
-  used to create readme file
+  used to easily create readme file
 
   ## License
   
