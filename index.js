@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -53,11 +54,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) => {
+  const outputDir = "./output/";
+  const outputPath = outputDir + fileName;
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir);
+  }
+
+  fs.writeFile(outputPath, data, (err) => {
     if (err) {
       console.log(err);
     } else {
-      console.log("README file created successfully!");
+      console.log("README file created successfully in the 'output' folder!");
     }
   });
 }
@@ -65,11 +72,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    const readmeContent = generateREADMEContent(answers);
-    writeToFile("NEWREADME.md", readmeContent);
+    const readmeContent = generateMarkdown(answers);
+    writeToFile("README.md", readmeContent);
   });
 }
-
 
 // Function call to initialize app
 init();

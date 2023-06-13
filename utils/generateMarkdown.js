@@ -11,7 +11,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
   # ${answers.Title}
   
@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   ${answers.Tests}
   
   ## License
-  ${answers.License.join(", ")}
+  ${answers.License}
   
   ## Questions
   For any questions, please reach out via GitHub or email:
