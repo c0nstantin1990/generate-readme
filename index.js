@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -58,8 +59,9 @@ const questions = [
 
 // Function to write README file
 function writeToFile(fileName, data) {
-  const outputDir = "./output/";
-  const outputPath = outputDir + fileName;
+  const outputDir = path.join(".", "output");
+  const outputPath = path.join(outputDir, fileName);
+
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
   }
@@ -75,7 +77,7 @@ function writeToFile(fileName, data) {
 
 // Function to initialize app
 function init() {
-  inquirer.prompt(questions).then((answers) => {
+  inquirer.prompt(questions).then(({ name, ...answers }) => {
     const readmeContent = generateMarkdown(answers);
     writeToFile("README.md", readmeContent);
   });
