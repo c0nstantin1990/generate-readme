@@ -4,6 +4,14 @@ function generateMarkdown(answers) {
   
   ## Description
   ${answers.Description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
   
   ## Installation
   ${answers.Installation}
@@ -11,14 +19,15 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.Usage}
   
+  ## License
+  ${answers.License}
+  
   ## Contributing
   ${answers.Contributing}
   
   ## Tests
   ${answers.Tests}
   
-  ## License
-  ${answers.License}
   
   ## Questions
   For any questions, please reach out via GitHub or email:
