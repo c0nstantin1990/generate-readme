@@ -37,7 +37,11 @@ const questions = [
   {
     type: "checkbox",
     message: "What license do you want to use?",
-    choices: ["MIT", "Apache", "None"],
+    choices: [
+      { name: "MIT", value: "MIT" },
+      { name: "Apache", value: "Apache" },
+      { name: "None", value: "None" },
+    ],
     name: "License",
   },
   {

@@ -17,7 +17,7 @@ function generateMarkdown(answers) {
     }
   }
   return `
-  # ${answers.Title}${licenseBadge}
+  # ${answers.Title} ${licenseBadge}
   
   ## Description
   ${answers.Description}
