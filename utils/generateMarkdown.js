@@ -1,4 +1,13 @@
 function generateMarkdown(answers) {
+  let licenseBadge = "";
+
+  // Checking if a license is specified
+  if (answers.License) {
+    // Creating the license badge markdown based on the license name
+    licenseBadge = `![License](https://img.shields.io/badge/License-${encodeURIComponent(
+      answers.License
+    )}-blue.svg) `;
+  }
   return `
   # ${answers.Title}
   
@@ -18,7 +27,7 @@ function generateMarkdown(answers) {
   
   ## Usage
   ${answers.Usage}
-  
+
   ## License
   ${answers.License}
   
