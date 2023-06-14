@@ -22,6 +22,8 @@ node index.js - to launch the app
 ![Input](/screenshots/input.png)
 ![Result](/screenshots/result.png)
 
+Link to walkthrough video: https://drive.google.com/file/d/1U5LNHZ4BHJZLg2rJCtC_V7ruLR6ksuB1/view
+
 App could be used to rapidly generate README
 
 ## Tests
