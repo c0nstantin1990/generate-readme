@@ -19,6 +19,9 @@ node index.js - to launch the app
 
 ## Usage
 
+![Input](/screenshots/input.png)
+![Result](/screenshots/result.png)
+
 App could be used to rapidly generate README
 
 ## Tests
