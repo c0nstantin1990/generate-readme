@@ -8,7 +8,7 @@ function generateMarkdown(answers) {
       MIT: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
       Apache:
         "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-      None: "[![License](https://img.shields.io/badge/License-None-lightgrey.svg)]",
+      None: "![License](https://img.shields.io/badge/License-None-lightgrey.svg)",
     };
     // Checking if a badge URL is available for the license
     if (licenseBadges[answers.License]) {
