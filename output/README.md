@@ -1,5 +1,5 @@
 
-# generate-readme 
+# generate-readme [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Description
 app to generate readme file with inputs
@@ -16,16 +16,16 @@ app to generate readme file with inputs
 node index.js
 
 ## Usage
-used to crerate readme file
+use to create readme file
 
 ## License
-Apache
+MIT
 
 ## Contributing
 uncc
 
 ## Tests
-check readme
+find readme with inputs
 
 ## Questions
 For any questions, please reach out via GitHub or email:

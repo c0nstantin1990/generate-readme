@@ -10,6 +10,10 @@ function generateMarkdown(answers) {
         "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
       None: "[![License](https://img.shields.io/badge/License-None-lightgrey.svg)]",
     };
+    // Checking if a badge URL is available for the license
+    if (licenseBadges[answers.License]) {
+      licenseBadge = licenseBadges[answers.License] + " ";
+    }
   }
 
   return `
