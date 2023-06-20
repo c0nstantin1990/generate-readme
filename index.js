@@ -46,6 +46,12 @@ const questions = [
     message: "What license do you want to use?",
     choices: ["MIT", "Apache", "None"],
     name: "License",
+    validate: (input) => {
+      if (input.length === 0) {
+        return "Please select at least one license.";
+      }
+      return true;
+    },
   },
   {
     type: "input",
